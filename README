@@ -1,0 +1,45 @@
+#BANK MANAGEMENT
+
+
+Technologies used - HTML, JSP, Servlets, JDBC, JAVA MAIL API, Cookies
+
+ABOUT THE PROJECT
+
+We have designed an Online Bank Management System using java in NETBEANS IDE, we have used JSP, Servlet and DBMS to create our project. Our project has 3 interfaces which the user can select from, 1st is Administrator Login, 2nd is Customer Registration and 3rd is Net Banking.
+In Administrator Login instance, the admin can access all the functionalities of the Bank such as :
+•	New Application for a new customer, which will check and verify the details and open a back account based on the minimum balance deposited by the customer. 
+•	Check the Cash Deposit and Withdraw, Cheque Deposit and Withdraw.
+•	Check any user’s data.
+•	Check the amount of daily transactions that is happening in the Bank.
+•	Access to Admin Dashboard which shows how much amount of money the Bank has dealt with since its inception.
+•	Access to Change Password.
+•	Access to Passbook.
+In Customer Registration instance, the user is prompted to the registration form where they will provide details like their name, email address, phone number, gender, Aadhar number , date of birth and residential address. Once their account is opened, the user will get their login id and password in their registered email id through mail.
+In Net Banking interface, the user can login through the login id and password provided in the mail. The user can access the following functionalities of the Bank :
+•	Can Recharge their phone number, DTH and Electricity Bill.
+•	Can Transfer money to another account in the same or different Bank (Beneficiary).
+•	Transfer Money to different bank has a limit set to it.
+•	Access to Passbook.
+Frontend
+HTML :- We have used HTML and CSS to make the frontend of our project.
+HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications. An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc.
+JSP :- Java Server Pages is used to make the frontend of our project, because it is easy to code in JSP, and it is easier to connect to database using JSP. 
+JSP stands for Java Server Pages. It is a server-side technology. It is used for creating web application. It is used to create dynamic web content. In this JSP tags are used to insert JAVA code into HTML pages. It is an advanced version of Servlet Technology. It is a Web based technology helps us to create dynamic and platform independent web pages. In this, Java code can be inserted in HTML/ XML pages or both.
+	Its lifecycle is as follows: 
+ 
+
+Backend
+Servlet :- We have used Servlet in  our project because it can directly communicate with the web server and can handle cookies.
+•	Servlets are the Java programs that runs on the Java-enabled web server or application server. They are used to handle the request obtained from the web server, process the request, produce the response, then send response back to the web server.
+•	Execution of Servlets involves six basic steps: The clients send the request to the web server; the web server receives the request; the web server passes the request to the corresponding servlet; the servlet processes the request and generates the response in the form of output; the servlet sends the response back to the web server; the web server sends the response back to the client and the client browser displays it on the screen.
+•	The HttpServlet class extends the GenericServlet class and implements Serializable interface. It provides http specific methods such as doGet, doPost, doHead, doTrace etc. public void service (ServletRequest req,ServletResponse res) dispatches the request to the protected service method by converting the request and response object into http type, protected void service (HttpServletRequest req, HttpServletResponse res) receives the request from the service method, and dispatches the request to the doXXX() method depending on the incoming http request type, protected void doGet (HttpServletRequest req, HttpServletResponse res) handles the GET request. It is invoked by the web container, protected void doPost (HttpServletRequest req, HttpServletResponse res) handles the POST request. It is invoked by the web container.
+JDBC:- It stands for Java Database Connectivity. JDBC is a Java API to connect and execute the query with the database. It is a part of JavaSE (Java Standard Edition). JDBC API uses JDBC drivers to connect with the database.
+ 
+Mail API:- The JavaMail is an API that is used to compose, write and read electronic messages (emails). The javax.mail and javax.mail.activation packages contains the core classes of JavaMail API.
+
+FUTURE SCOPE
+
+•	We would like to work on making the application more secure but using encryption on all values passed.
+•	Add functionality to admin panel for Administrator managements too as now they are based on the database only.
+•	Add Loan Functionality for the customers to avail loan and based on their account transaction report the loan will be passed.
+•	Work more  on GUI to make it more attractive.
